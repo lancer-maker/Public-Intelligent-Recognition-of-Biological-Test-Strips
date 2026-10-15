@@ -1,0 +1,132 @@
+{
+  "image": "C:\\Users\\lancer\\Desktop\\814e9083f8eb2625f2d277f2ff0262d1.jpg",
+  "card_detect_method": "orb-reference(inliers=127)",
+  "qc": {
+    "valid": true,
+    "n_peaks": 3,
+    "peaks": [
+      152,
+      272,
+      428
+    ]
+  },
+  "threshold": {
+    "primary": 0.0574514344334602,
+    "neg_max": 0.0574514344334602,
+    "pos_min": 0.0574514344334602
+  },
+  "results": {
+    "1": {
+      "name": "SmD1",
+      "prob": 0.03123047910630703,
+      "member_probs": [
+        0.03383651375770569,
+        0.03849871829152107,
+        0.03455539792776108,
+        0.02104504220187664,
+        0.02821672335267067
+      ],
+      "label": "阴性"
+    },
+    "2": {
+      "name": "U1-snRNP",
+      "prob": 0.039155451208353044,
+      "member_probs": [
+        0.06682685017585754,
+        0.04753798246383667,
+        0.03613859787583351,
+        0.030051546171307564,
+        0.015222279354929924
+      ],
+      "label": "阴性"
+    },
+    "3": {
+      "name": "SSA 60kD",
+      "prob": 0.00941615616902709,
+      "member_probs": [
+        0.012750757858157158,
+        0.012493222951889038,
+        0.00955415889620781,
+        0.006283622235059738,
+        0.005999018903821707
+      ],
+      "label": "阴性"
+    },
+    "4": {
+      "name": "SSA 52kD",
+      "prob": 0.0353667426854372,
+      "member_probs": [
+        0.0499904565513134,
+        0.03125839680433273,
+        0.04988107830286026,
+        0.028914088383316994,
+        0.016789693385362625
+      ],
+      "label": "阴性"
+    },
+    "5": {
+      "name": "SSB",
+      "prob": 0.017004620842635633,
+      "member_probs": [
+        0.021326040849089622,
+        0.0245907474309206,
+        0.021054819226264954,
+        0.007953419350087643,
+        0.010098077356815338
+      ],
+      "label": "阴性"
+    },
+    "6": {
+      "name": "Scl-70",
+      "prob": 0.049278973788023,
+      "member_probs": [
+        0.03879590705037117,
+        0.07469582557678223,
+        0.046670086681842804,
+        0.030177589505910873,
+        0.0560554601252079
+      ],
+      "label": "阴性"
+    },
+    "7": {
+      "name": "Jo-1",
+      "prob": 0.009729682561010122,
+      "member_probs": [
+        0.018773768097162247,
+        0.011809620074927807,
+        0.010710978880524635,
+        0.0028474400751292706,
+        0.004506605677306652
+      ],
+      "label": "阴性"
+    },
+    "8": {
+      "name": "CENP-B",
+      "prob": 0.9899743437767029,
+      "member_probs": [
+        0.9859442710876465,
+        0.9969828724861145,
+        0.9735710024833679,
+        0.9945268034934998,
+        0.9988467693328857
+      ],
+      "label": "阳性"
+    }
+  },
+  "summary": "1(SmD1):阴性 2(U1-snRNP):阴性 3(SSA 60kD):阴性 4(SSA 52kD):阴性 5(SSB):阴性 6(Scl-70):阴性 7(Jo-1):阴性 8(CENP-B):阳性",
+  "outputs": {
+    "result_image": "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\results\\814e9083f8eb2625f2d277f2ff0262d1\\diagram_result.png",
+    "result_standard": "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\results\\814e9083f8eb2625f2d277f2ff0262d1\\diagram_result_standard.png",
+    "summary_txt": "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\results\\814e9083f8eb2625f2d277f2ff0262d1\\summary.txt",
+    "heatmaps": [
+      "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\heatmaps\\814e9083f8eb2625f2d277f2ff0262d1\\1_SmD1_cam.png",
+      "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\heatmaps\\814e9083f8eb2625f2d277f2ff0262d1\\2_U1-snRNP_cam.png",
+      "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\heatmaps\\814e9083f8eb2625f2d277f2ff0262d1\\3_SSA 60kD_cam.png",
+      "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\heatmaps\\814e9083f8eb2625f2d277f2ff0262d1\\4_SSA 52kD_cam.png",
+      "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\heatmaps\\814e9083f8eb2625f2d277f2ff0262d1\\5_SSB_cam.png",
+      "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\heatmaps\\814e9083f8eb2625f2d277f2ff0262d1\\6_Scl-70_cam.png",
+      "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\heatmaps\\814e9083f8eb2625f2d277f2ff0262d1\\7_Jo-1_cam.png",
+      "D:\\work\\Intelligent-Recognition-of-Biological-Test-Strips\\src\\Diagram\\artifacts\\heatmaps\\814e9083f8eb2625f2d277f2ff0262d1\\8_CENP-B_cam.png"
+    ]
+  }
+}

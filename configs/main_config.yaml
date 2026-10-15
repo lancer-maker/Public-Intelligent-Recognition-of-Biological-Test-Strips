@@ -1,0 +1,58 @@
+
+system:
+  project_name: "immunoassay_strip_reader"
+  seed: 42
+  device: "cuda"
+  num_workers: 8
+
+data:
+  orig_csv_path: "data\\labels\\P\\labels.csv"
+  anon_csv_path: "data\\labels\\N\\labels.csv"
+  qc_image_dir: "data\\raw\\control_strips"
+  standard_dpi_size: [220, 505]
+  proj_length: 512
+  proj_use_col_avg: true
+  proj_col_roi_fraction: 0.33
+  proj_col_length: 512
+
+model:
+  backbone_2d: "efficientnet_b0"
+  pretrained: true
+  feature_dim: 128
+  dropout_rate: 0.6
+  spatial_guide_enabled: true
+  spatial_guide_sigma: 0.25
+  spatial_guide_pos_center: 0.5
+  proj_conv_kernel_sizes: [15, 9, 5, 3]
+  proj_conv_channels: [32, 64, 128, 256]
+  proj_dropout_rate: 0.7
+  proj_add_position_channel: true
+
+training:
+  optimizer: "AdamW"
+  weight_decay: 0.001
+  early_stopping_patience: 15
+  
+  stage1:
+    epochs: 60
+    batch_size: 96
+    learning_rate: 0.0001
+
+  stage2:
+    epochs: 25
+    batch_size: 64
+    learning_rate: 0.000002
+    unfreeze_interval: 4
+    unfreeze_start_block: 6
+    unfreeze_num_layers: 2
+
+evaluation:
+  num_patients: 24
+  default_threshold: 0.5
+  optimize_threshold: true
+
+output:
+  checkpoint_dir: "outputs/checkpoints"
+  log_dir: "outputs/logs"
+  onnx_dir: "outputs/onnx_models"
+  onnx_filename: "dual_stream_strip_net.onnx"
